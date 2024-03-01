@@ -11,10 +11,11 @@
 .active {
     transform: scale(1.4);
     position: relative;
+    transition: 400ms ease-in-out;
 }
 
 .active::after {
-    content: "Alex Mathew";
+    content: attr(data-content);
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -66,5 +67,9 @@
         border-right: 40px solid transparent;
         border-bottom: 40px solid white;
         top: -2.5rem;
+    }
+    .active::after {
+        font-size: 0.5rem;
+        padding: 3px;
     }
 }

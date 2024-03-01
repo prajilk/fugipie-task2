@@ -89,7 +89,7 @@
                     <img src="assets/Hero Image.png" alt="" class="w-96 h-80 lg:h-auto">
                 </div>
                 <div
-                    class="absolute w-[95%] lg:w-[60%] py-5 bg-white text-black rounded-lg bottom-4 flex justify-between px-3 lg:px-10 items-center left-2 lg:right-16 lg:-translate-x-1/2">
+                    class="absolute w-[95%] lg:w-[60%] py-5 bg-white text-black rounded-lg bottom-4 flex justify-between px-3 lg:px-10 items-center left-2 md:left-16">
                     <div class="flex gap-3 lg:gap-10">
                         <div>
                             <span class="text-xs lg:text-base font-semibold">Arrival <i
@@ -270,17 +270,26 @@
         <!-- Happy customers section -->
         <section class="container mx-auto px-4 md:px-14 my-10 overflow-hidden pb-32 lg:pb-60">
             <h1 class="text-xl lg:text-4xl font-bold text-center mb-10 lg:mb-24">Our Happy Customers</h1>
-            <div class="flex justify-between" id="slider">
-                <img src="assets/Rectangle 55.png" alt="" class="aspect-square w-40 hidden lg:block">
-                <img src="assets/Rectangle 56.png" alt="" class="aspect-square w-20 lg:w-40">
-                <div class="aspect-square w-20 lg:w-40 lg:active">
+            <div class="flex gap-10 md:gap-20 justify-center" id="slider">
+                <div class="slide aspect-square w-20 lg:w-40 flex-shrink-0" onclick="slide(1)" id="slide1">
+                    <img src="assets/Rectangle 55.png" alt="">
+                </div>
+                <div class="slide aspect-square w-20 lg:w-40 flex-shrink-0" onclick="slide(2)" id="slide2">
+                    <img src="assets/Rectangle 56.png" alt="">
+                </div>
+                <div class="slide aspect-square w-20 lg:w-40 flex-shrink-0 active" onclick="slide(3)" id="slide3">
                     <img src="assets/Rectangle 57.png" alt="" class="">
                 </div>
-                <img src="assets/Rectangle 58.png" alt="" class="aspect-square w-20 lg:w-40">
-                <img src="assets/Rectangle 59.png" alt="" class="aspect-square w-40 hidden lg:block">
+                <div class="slide aspect-square w-20 lg:w-40 flex-shrink-0" onclick="slide(4)" id="slide4">
+                    <img src="assets/Rectangle 58.png" alt="">
+                </div>
+                <div class="slide aspect-square w-20 lg:w-40 flex-shrink-0" onclick="slide(5)" id="slide5">
+                    <img src="assets/Rectangle 59.png" alt="">
+                </div>
             </div>
             <div class="dialouge__box">
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor leo eros in urna id. Tortor amet non libero
+                <p id="testimonial">Lorem ipsum dolor sit amet consectetur. Porttitor leo eros in urna id. Tortor amet
+                    non libero
                     tellus adipiscing nibh est
                     enim purus. Sed quisque lorem commodo gravida. Convallis dignissim pulvinar nisl scelerisque leo
                     ullamcorper.</p>
