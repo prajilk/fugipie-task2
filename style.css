@@ -1,0 +1,70 @@
+.sidebar {
+    transform: translateX(-100%);
+    transition: 400ms ease-in-out;
+}
+
+.sidebar__open {
+    transform: translateX(0%);
+    transition: 400ms ease-in-out;
+}
+
+.active {
+    transform: scale(1.4);
+    position: relative;
+}
+
+.active::after {
+    content: "Alex Mathew";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 7px;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 7px 5px;
+    width: 90%;
+}
+
+.dialouge__box {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    bottom: -8rem;
+    padding: 50px 70px;
+    font-weight: 500;
+}
+
+.dialouge__box::after {
+    content: "";
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid white;
+    position: absolute;
+    top: -3.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider {
+    transition: 300ms ease-in-out;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .dialouge__box {
+        padding: 20px 40px;
+        font-size: 0.7rem;
+    }
+    .dialouge__box::after {
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 40px solid white;
+        top: -2.5rem;
+    }
+}
